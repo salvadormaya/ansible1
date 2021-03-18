@@ -1,0 +1,9 @@
+---
+
+- name: apt_repository to manage APT repositories
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: "Add APT OpenStack repository for Ubuntu Xenial"
+      apt_repository:
+        repo: "deb http://ubuntu-cloud.archive.canonical.com/ubuntu xenial-updates/ocata main"
