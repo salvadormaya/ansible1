@@ -1,0 +1,10 @@
+---
+
+- name: Run commands with shell
+  hosts: all
+
+  tasks:
+    - name: Copy sample-template.txt to sample-template.bak
+      shell: 'cp sample-template.txt sample-template.bak'
+      args:
+        chdir: /home/smaya/myfolder

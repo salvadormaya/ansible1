@@ -12,7 +12,7 @@
         owner: smaya
         group: smaya
 
-    - name: Delete sample-template.bak file
+    - name: touch sample-template.bak file
       file:
         path: /home/smaya/sample-template.bak
         state: absent
